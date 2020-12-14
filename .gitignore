@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 db.sqlite3
+posts.json
 migrations/
 media/
 settings.py
