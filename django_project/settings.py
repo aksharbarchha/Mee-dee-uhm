@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
+    'cloudinary_storage',
+    'cloudinary',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -142,3 +144,11 @@ cloudinary.config(
   api_key = "443696554417523", 
   api_secret = "W_Y6bw5xtM9T9zZboZIHg02aQpI" 
 )
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'du70r2hbx',
+    'API_KEY': '443696554417523',
+    'API_SECRET': 'W_Y6bw5xtM9T9zZboZIHg02aQpI',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
