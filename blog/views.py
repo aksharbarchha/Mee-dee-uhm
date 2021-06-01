@@ -25,6 +25,21 @@ class PostListView(ListView):
     ordering = ['-date_posted']
     paginate_by = 5
 
+class SearchView(ListView):
+    model = Post
+    template_name = 'blog/home.html'
+    context_object_name = 'posts'
+
+    def get_queryset(self):
+        result = super(SearchView, self).get_queryset()
+        query = self.request.GET.get('search')
+        if query:
+            postresult = Post.objects.filter(title__contains=query)
+            result = postresult
+        else:
+            result = None
+        return result
+
 
 class UserPostListView(ListView):
     model = Post

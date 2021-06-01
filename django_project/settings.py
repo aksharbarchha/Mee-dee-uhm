@@ -12,9 +12,9 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import django_heroku
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
+# import cloudinary
+# import cloudinary.uploader
+# import cloudinary.api
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
-    'cloudinary_storage',
-    'cloudinary',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -139,16 +137,16 @@ LOGIN_URL = 'login'
 
 django_heroku.settings(locals())
 
-cloudinary.config( 
-  cloud_name = "du70r2hbx", 
-  api_key = "443696554417523", 
-  api_secret = "W_Y6bw5xtM9T9zZboZIHg02aQpI" 
-)
+# cloudinary.config( 
+#   cloud_name = "du70r2hbx", 
+#   api_key = "443696554417523", 
+#   api_secret = "W_Y6bw5xtM9T9zZboZIHg02aQpI" 
+# )
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'du70r2hbx',
-    'API_KEY': '443696554417523',
-    'API_SECRET': 'W_Y6bw5xtM9T9zZboZIHg02aQpI',
-}
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': 'du70r2hbx',
+#     'API_KEY': '443696554417523',
+#     'API_SECRET': 'W_Y6bw5xtM9T9zZboZIHg02aQpI',
+# }
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
