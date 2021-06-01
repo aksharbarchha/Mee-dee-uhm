@@ -29,21 +29,13 @@
 
 ### Steps for Project Execution :
 
-##### Install Required Packages:
-```
-1. Clone the Repository
-2. Create a Virtual Environment
-3. Install the packages :
-        pip install -r requirements.txt
-```
-##### To Run:
-```
-python manage.py makemigrations
-
-python manage.py migrate
-
-python manage.py runserver
-```
+1. Clone this repository.
+2. Open the cloned repository.
+3. Install dependencies using ``pip install -r requirements.txt``
+**OR**
+Install ``pipenv`` using ``pip install pipenv`` and initialise a Virtual Machine using ``pipenv install`` in the directory.
+4. Make migrations using ``python manage.py makemigrations`` and ``python manage.py migrate``.
+5. Run the Django Server using ``python manage.py runserver`` and then goto ``localhost:8000`` or ``127.0.0.1:8000`` and see the server running.
 
 
 
