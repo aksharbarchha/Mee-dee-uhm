@@ -17,13 +17,13 @@
 ### TechStack Used
 
 * Programming language
-- [x] **Python**
+   - [x] **Python**
 
 * Framework
-- [x] **Django**
+   - [x] **Django**
 
 * Database
-- [x] **Sqlite**
+   - [x] **Sqlite**
 
 ------------------------------------------
 
